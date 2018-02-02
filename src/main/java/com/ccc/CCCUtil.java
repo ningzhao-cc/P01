@@ -12,6 +12,10 @@ import java.util.Date;
  * Created by Ning on 2/1/18.
  */
 public class CCCUtil {
+
+    public static String deezerTypes = "track / album / playlist";
+    public static String spotifyTypes = "track / album / playlist / artist";
+
     public static int creatInt() {
         return (int) (Math.random() * 10000000);
     }
@@ -36,5 +40,16 @@ public class CCCUtil {
         doc.put("type", type);
 
         return doc;
+    }
+
+    public static String getAvailableTypes(String provider) {
+        switch (provider) {
+            case "deezer":
+                return deezerTypes;
+            case "spotify":
+                return spotifyTypes;
+            default:
+                return deezerTypes;
+        }
     }
 }

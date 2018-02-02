@@ -73,6 +73,33 @@ public class App
         //while (true);
 
 
+        //
+        //MusicFactory mf;
+        //Scanner in = new Scanner(System.in);
+        //
+        //do {
+        //    System.out.println("please select a provider: deezer / spotify");
+        //
+        //    String provider = in.nextLine();
+        //
+        //    switch (provider) {
+        //        case "deezer":
+        //            mf = new DeezerFactory(); // not a singleton used here
+        //            break;
+        //        case "spotify":
+        //            mf = new SpotifyFactory(); // not a singleton used here
+        //            break;
+        //        default:
+        //            mf = new DeezerFactory(); // not a singleton used here
+        //            break;
+        //    }
+        //    System.out.println("please select a mediaType: " + CCCUtil.getAvailableTypes(provider));
+        //    String type = in.nextLine();
+        //
+        //    mf.playMusic(type);
+        //}
+        //while (true);
+
 
         //
         //final Configuration configuration = new Configuration();
@@ -104,8 +131,6 @@ public class App
         //    }
         //    return writer;
         //});
-
-
 
     }
 }

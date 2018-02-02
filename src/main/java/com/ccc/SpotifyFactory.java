@@ -17,9 +17,18 @@ public class SpotifyFactory extends MusicFactory {
             case "album" :
                 return playAlbum();
 
+            case "artist" :
+                return playArtist();
+
             default:
                 return playTrack();
         }
+    }
+
+    private String playArtist() {
+        Artist artist = new SpotifyArtist();
+        System.out.println("playing artist: " + artist.getId());
+        return artist.getId();
     }
 
     @Override
