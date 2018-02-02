@@ -26,22 +26,22 @@ public class App
     public static void main( String[] args )
     {
 
-        MusicFactory mf = new DeezerFactory();
-        System.out.println(mf.getClass());
-
-        mf.playTrack();
-        mf.playTrack();
-        mf.playTrack();
-        mf.playTrack();
-        mf.playTrack();
-        mf.playTrack();
-        mf.playTrack();
-
-        mf.playAlbum();
-        mf.playPlaylist();
-
-        mf = new SpotifyFactory();
-        mf.playPlaylist();
+        //MusicFactory mf = new DeezerFactory();
+        //System.out.println(mf.getClass());
+        //
+        //mf.playTrack();
+        //mf.playTrack();
+        //mf.playTrack();
+        //mf.playTrack();
+        //mf.playTrack();
+        //mf.playTrack();
+        //mf.playTrack();
+        //
+        //mf.playAlbum();
+        //mf.playPlaylist();
+        //
+        //mf = new SpotifyFactory();
+        //mf.playPlaylist();
 
 
 
@@ -73,32 +73,32 @@ public class App
         //while (true);
 
 
-        //
-        //MusicFactory mf;
-        //Scanner in = new Scanner(System.in);
-        //
-        //do {
-        //    System.out.println("please select a provider: deezer / spotify");
-        //
-        //    String provider = in.nextLine();
-        //
-        //    switch (provider) {
-        //        case "deezer":
-        //            mf = new DeezerFactory(); // not a singleton used here
-        //            break;
-        //        case "spotify":
-        //            mf = new SpotifyFactory(); // not a singleton used here
-        //            break;
-        //        default:
-        //            mf = new DeezerFactory(); // not a singleton used here
-        //            break;
-        //    }
-        //    System.out.println("please select a mediaType: " + CCCUtil.getAvailableTypes(provider));
-        //    String type = in.nextLine();
-        //
-        //    mf.playMusic(type);
-        //}
-        //while (true);
+
+        MusicFactory mf;
+        Scanner in = new Scanner(System.in);
+
+        do {
+            System.out.println("please select a provider: deezer / spotify");
+
+            String provider = in.nextLine();
+
+            switch (provider) {
+                case "deezer":
+                    mf = new DeezerFactory(); // not a singleton used here
+                    break;
+                case "spotify":
+                    mf = new SpotifyFactory(); // not a singleton used here
+                    break;
+                default:
+                    mf = new DeezerFactory(); // not a singleton used here
+                    break;
+            }
+            System.out.println("please select a mediaType: " + CCCUtil.getAvailableTypes(provider));
+            String type = in.nextLine();
+
+            mf.playMusic(type);
+        }
+        while (true);
 
 
         //
