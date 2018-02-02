@@ -27,7 +27,14 @@ public class CCCUtil {
 
     public static Document createDoc(String id) {
         Document doc = new Document();
+        String[] strs = id.split(":");
+        String provider = strs[0];
+        String type = strs[1];
+
         doc.put("id", id);
+        doc.put("provider", provider);
+        doc.put("type", type);
+
         return doc;
     }
 }

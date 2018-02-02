@@ -56,13 +56,13 @@ public class App
         //
         //    switch (provider) {
         //        case "deezer":
-        //            mf = new DeezerFactory();
+        //            mf = new DeezerFactory(); // not a singleton used here
         //            break;
         //        case "spotify":
-        //            mf = new SpotifyFactory();
+        //            mf = new SpotifyFactory(); // not a singleton used here
         //            break;
         //        default:
-        //            mf = new DeezerFactory();
+        //            mf = new DeezerFactory(); // not a singleton used here
         //            break;
         //    }
         //    System.out.println("please select a mediaType: track / album / playlist");
@@ -104,6 +104,8 @@ public class App
         //    }
         //    return writer;
         //});
+
+
 
     }
 }
