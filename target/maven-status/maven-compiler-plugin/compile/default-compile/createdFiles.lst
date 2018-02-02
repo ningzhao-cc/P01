@@ -1,1 +1,14 @@
+com/ccc/Album.class
+com/ccc/DeezerPlaylist.class
+com/ccc/SpotifyPlaylist.class
+com/ccc/MusicFactory.class
+com/ccc/Playlist.class
+com/ccc/SpotifyAlbum.class
+com/ccc/CCCUtil.class
 com/ccc/App.class
+com/ccc/DeezerTrack.class
+com/ccc/Track.class
+com/ccc/DeezerFactory.class
+com/ccc/SpotifyFactory.class
+com/ccc/DeezerAlbum.class
+com/ccc/SpotifyTrack.class
